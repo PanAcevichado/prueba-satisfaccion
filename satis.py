@@ -31,7 +31,7 @@ diccionario_preguntas = {
 # --- 3. CARGA DE DATOS ---
 @st.cache_data
 def cargar_datos():
-    archivo = "C:/Users/Usuario/Downloads/datos-satisfaccion.xlsx"
+    archivo = "datos-satisfaccion.xlsx"
     try:
         # Intentamos leer con codificación estándar
         df = pd.read_excel(archivo)
@@ -55,7 +55,7 @@ try:
         st.stop()
         
 except FileNotFoundError:
-    st.error(f"⚠️ No encuentro el archivo. Asegúrate de que 'datos-satisfaccion.xlsx - Hoja1.csv' esté en la misma carpeta que este script.")
+    st.error(f"⚠️ No encuentro el archivo. Asegúrate de que 'datos-satisfaccion.xlsx' esté en la misma carpeta que este script.")
     st.stop()
 
 # --- 4. PANEL DE CONTROL (SIDEBAR) ---
