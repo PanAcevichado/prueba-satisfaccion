@@ -6,7 +6,7 @@ import openpyxl
 # --- 1. CONFIGURACIÓN DE LA PÁGINA ---
 st.set_page_config(page_title="Dashboard de Satisfacción", layout="wide")
 
-st.title("📊 Análisis de Satisfacción-UNALM 2024-2(Carga tu archivo)")
+st.title("📊 Análisis de Satisfacción-UNALM 2024-2")
 st.markdown("---")
 
 # --- 2. DICCIONARIO DE VARIABLES ---
